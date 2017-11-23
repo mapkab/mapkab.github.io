@@ -36,7 +36,7 @@ btn.on('click',()=>{
 });
 html2canvas(block).then((canvas)=>{
         can.append(canvas);
-        var a1='../dist/images/1.jpg';
+        var a1='../images/1.jpg';
         img.on('load',()=>{
             const a1=canvas.toDataURL('image/png');
             img.attr('src',a1);
