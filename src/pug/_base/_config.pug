@@ -1,0 +1,9 @@
+block pugConfig
+include _head.pug
+include _footScript.pug
+doctype html
+html(lang="zh-CN")
+	+head(pugConfig.titleText,pugConfig.cssModuleFileName,pugConfig.isMobile,pugConfig.isNotSpa)
+	body(class=pugConfig.bodyClassName)
+		block pugContent
+		+footScript(pugConfig.confName,pugConfig.isNotSpa)

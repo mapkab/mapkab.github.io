@@ -1,0 +1,13 @@
+mixin head(titleText,cssName,isMobile,isNotSpa)
+	head
+		if(isMobile)
+			include _metamobile.pug
+		else
+			include _metapc.pug
+
+		title= titleText
+		if (isMobile)
+			include _rem.pug
+		if(isNotSpa)
+			link(type="text/css",rel="stylesheet",href="../css/public/public.min.css")/
+		link(type="text/css",rel="stylesheet",href=`../css/modules/${cssName}.min.css`)/

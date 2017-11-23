@@ -1,0 +1,69 @@
+{
+  "name": "yi-frames-ui-jquery",
+  "version": "1.0.0",
+  "description": "The widgets of Yi-Frames-Ui for jQuery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp dev",
+    "dev": "rimraf ../dist && gulp dev",
+    "clean": "rimraf ../dist",
+    "build": "rimraf ../dist && gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mapkab/generator-yiframes.git"
+  },
+  "keywords": [
+    "generator-yi-frames",
+    "yi-frames",
+    "yi-frames-ui",
+    "yi-frames-ui-jquery",
+    "jQuery"
+  ],
+  "author": "Mapk Volkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mapkab/generator-yiframes/issues"
+  },
+  "homepage": "https://github.com/mapkab/generator-yiframes#readme",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8",
+    "Android >= 4.0"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "photoclip": "^3.3.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-smushit": "^1.2.0",
+    "gulp-watch": "^4.3.11",
+    "html2canvas": "^0.5.0-beta4",
+    "postcss-clean": "^1.1.0",
+    "postcss-font-magician": "^2.1.0",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-url": "^7.1.2",
+    "postcss-urlrev": "^2.0.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^3.8.1",
+    "webpack-merge": "^4.1.1",
+    "webpack-stream": "^4.0.0"
+  }
+}

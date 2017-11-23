@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@mixin reset($isMobile:true){
+	@if $isMobile{
+		html {
+		  -webkit-text-size-adjust: 100%;
+		}
+
+		body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, select, cite, p {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: 0;
+			font-size: 100%;
+			font-style: normal;
+			font-weight: inherit;
+			vertical-align: baseline;
+			-webkit-tap-highlight-color: transparent;
+			box-sizing: border-box;
+		}
+
+		div:before,
+		div:after{
+			box-sizing: border-box;
+		}
+
+		body, button, input, select, textarea {
+		  font-size: 14px;
+		  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+		}
+
+		header, footer, section, article, nav {
+		  display: block;
+		}
+
+		ul, ol, li {
+		  list-style: none;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+		  font-weight: 500;
+		}
+
+		input, textarea, select {
+		  background: none;
+		}
+
+		a {
+		  color: #333;
+		}
+		a:link,
+		a:visited,
+		a:hover,
+		a:active {
+		  text-decoration: none;
+		}
+
+		img {
+		  max-width: 100%;
+		  border: 0 none;
+		  vertical-align: middle;
+		}
+	}@else{
+		html {
+		  height: 100%;
+		}
+
+		body, div,
+		h1, h2, h3, h4, h5, h6,
+		ul, ol, li, 
+		dl, dt, dd, 
+		menu, p, pre, hr, 
+		form, input, select, button, textarea, 
+		table, td, th {
+			margin: 0;
+			padding: 0;
+		}
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		th {
+			text-align: left;
+			font-weight: 500;
+		}
+
+		img {
+		  max-width: 100%;
+		  border: 0;
+		  vertical-align: middle;
+		}
+
+		ul, ol, li {
+			list-style: none;
+		}
+
+		h1, h2, h3, h4, h5, h6, small {
+		  font-size: 100%;
+		  font-weight: 700;
+		}
+
+		textarea {
+			overflow: auto;
+			resize: none;
+		}
+
+		a, button {
+			cursor: pointer;
+		}
+
+		a{
+		  color: #2E85FF;  
+			text-decoration: none;
+		}
+		a:hover{
+		  color: #1f70db;
+		}
+
+		body {
+		  min-height: 100%;
+		  color: #5E6E87;
+		  font-size: 14px;
+		  line-height: 1.5;
+		  background:#ECF0F4;
+		  font-family: 'Helvetica Neue',Tahoma,Arial,'Hiragino Sans GB',\534E\6587\9ED1\4F53,\6587\6CC9\9A7F\6B63\9ED1\4F53,"Microsoft YaHei", \5fae\8f6f\96c5\9ed1, sans-serif;
+		  //font-family: 'Hiragino Sans GB','Helvetica Neue',Arial, "Microsoft YaHei", sans-serif;
+		}
+
+	}
+}

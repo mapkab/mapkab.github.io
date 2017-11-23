@@ -1,0 +1,14 @@
+extends _base/_config.pug
+block pugConfig
+	-const pugConfig={titleText:`button`,cssModuleFileName:`c`,confName:`button`,bodyClassName:[],isMobile:true,isNotSpa:false}
+block pugContent
+	#block(style='position:relative;background:red;width:400px;height:400px;background:url(../../images/1.jpg)')
+		#clipArea(style='width:100%;height:100%;')
+		#view(style='position: absolute;left: 0;top: 0;z-index: 1;display: none;width: 100%;height: 100%;background-size: 100% 100% !important;')
+	input(type="file")#file
+	#clipBtn 确认
+	hr/
+	#canvas
+	hr/
+	#into
+		img#img
